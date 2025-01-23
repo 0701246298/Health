@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/application.css">
+    <title>HEALTH DEPARTMENT | APPLICATION FORM</title>
+    <link rel="icon" href="img/health icon.jpeg" type="image/x-icon">
+    
+</head>
+<body>
+   
+       
+        <section>
+            <header class="head">
+                <div class="logo">
+                    <img src="img/health icon.jpeg" alt="" height="90%">
+                    HEALTH
+                </div>
+                <ul><li><a href="contact.html" class="cont">Contact Us</a></li></ul>
+                
+            
+            </header>
+        </section>
+        <section id="signup" style="height: 400px;">
+          <a id="appointment" style="color: white;"><div class="title">Make an your applications right now!</div></a>
+          <div class="content">Offer your official details.</div>
+          <div class="button-wrapper">
+            <button id="show" onclick="show()">Make applications</button>
+          </div><br>
+          
+        <div id="forma" style="width: 960px; max-width: 90%; margin: 0 auto; text-align: center; display:none;">
+          <div class="alert">Your message has been sent</div>
+          <form id="contactForm" action="" method="post">
+            <div>
+              <input placeholder="Email id" type="email" id="inputEmail" name="Email" required>
+            </div>
+            <div>
+              <input placeholder="Your Name" type="name" id="inputName" name="Name" required>
+            </div>
+            <div>
+              <input placeholder="Your Age" type="number" id="inputAge" name="Age" required>
+            </div>
+            <div>
+              <input type="text" id="inputAddress" placeholder="Your Address" name="Address" required>
+            </div>
+            <div>
+              <input type="text" id="inputCity" placeholder="Your City" name="City" required>
+            </div>
+            <div>
+              <textarea id="message" name="Message" rows="4" placeholder="Message"></textarea>
+            </div>
+            <div>
+                <input id="my-date-picker" name="Date and Time" type="datetime-local" required>
+            </div>
+                <label for="pdf-upload">Attach Pdf copy of your school letter,Id, Cv,Nitaform, hand written application letter and certificate of good conduct.just in one pdf life:</label>
+                <input id="pdf-upload" name="pdfFile" type="file" accept=".pdf" required>
+              </div>
+
+              <input type="text" id="inputPhone" placeholder="Phone Number" name="Phone" required>
+            </div>
+
+            <input type="text" id="inputinstitution" placeholder="Institution" name="Institution" required>
+            </div>
+            
+            <div>
+              <button type="submit">Send</button>
+            </div>
+            </div>
+          </form>
+        </div>
+        </section>
+        
+    
+
+    <div class="lower">
+        <object type="text/html" data="footer.html" width="100%" height="300px"></object>
+    </div>
+
+    <script src="js/navbar.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
